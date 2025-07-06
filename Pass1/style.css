@@ -1,0 +1,47 @@
+/* Using a custom font for a better look */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styles for the chessboard squares */
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; /* Adjust knight size */
+    transition: background-color 0.3s ease;
+}
+
+/* Alternating square colors */
+.brown {
+    background-color: #b58863; /* A classic brown */
+}
+
+.black {
+    background-color: #5b2e00; /* A dark brown */
+}
+
+/* Style for the knight piece */
+.knight {
+    color: #333;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+/* Style for squares the knight has landed on */
+.visited-once {
+    background-color: #ffffff !important; /* White for visited squares */
+}
+
+/* Style for squares the knight has landed on more than once */
+.visited-twice {
+    background-color: #ef4444 !important; /* Red for re-visited squares */
+}
+
+/* Style for the active speed button */
+#speedControls .speed-btn.active {
+    background-color: #2563eb; /* Blue to match the start button */
+    font-weight: bold;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}

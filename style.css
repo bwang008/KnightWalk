@@ -1,0 +1,71 @@
+/* Using a custom font for a better look */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styles for the chessboard squares */
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; /* Adjust knight size */
+    transition: background-color 0.3s ease;
+}
+
+/* Alternating square colors */
+.brown {
+    background-color: #b58863; /* A classic brown */
+}
+
+.black {
+    background-color: #5b2e00; /* A dark brown */
+}
+
+/* Style for the knight piece */
+.knight {
+    color: #333;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1);
+    position: relative;
+    z-index: 10;
+}
+
+/* Style for squares the knight has landed on */
+.visited-once {
+    background-color: #ffffff !important; /* White for visited squares */
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5); /* Add a subtle inner border */
+}
+
+/* Style for squares the knight has landed on more than once */
+.visited-twice {
+    background-color: #ef4444 !important; /* Red for re-visited squares */
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5); /* Also add border to red squares */
+}
+
+/* Style for the active speed button */
+#speedControls .speed-btn.active {
+    background-color: #2563eb; /* Blue to match the start button */
+    font-weight: bold;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* Styles for the guide arrow */
+.arrow-segment {
+    position: absolute;
+    background-color: rgba(29, 78, 216, 0.7); /* Semi-transparent blue */
+    height: 6px; /* Arrow thickness */
+    transform-origin: left center;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.8);
+}
+
+.arrow-head {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid rgba(29, 78, 216, 0.7); /* Arrowhead color */
+    transform-origin: center;
+}
