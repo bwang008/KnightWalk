@@ -5,3 +5,5 @@ https://bwang008.github.io/KnightWalk/
 Simply hit start and watch the knight traverse the entire chessboard by touching every square without repeating any. 
 
 A rendition of the traveling salesman problem or finding a Hamiltonian or Rudrata path. 
+
+Created in under an hour using Gemini pro 2.5
